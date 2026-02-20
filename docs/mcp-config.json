@@ -1,0 +1,34 @@
+{
+  "mcpServers": {
+    "local-rag": {
+      "command": "npx",
+      "args": ["-y", "mcp-local-rag"],
+      "env": {
+        "BASE_DIR": "./docs"
+      }
+    },
+    "context7": {
+      "command": "npx",
+      "args": ["-y", "@upstash/context7-mcp"]
+    },
+    "postgres": {
+      "command": "npx",
+      "args": ["-y", "@crystaldba/postgres-mcp"],
+      "env": {
+        "DATABASE_URL": "postgresql://polybot:password@localhost:5432/polybot",
+        "PG_MCP_MODE": "restricted"
+      }
+    },
+    "redis": {
+      "command": "npx",
+      "args": ["-y", "@redis/mcp-redis"],
+      "env": {
+        "REDIS_URL": "redis://localhost:6379/0"
+      }
+    },
+    "docker": {
+      "command": "npx",
+      "args": ["-y", "@quantgeekdev/docker-mcp"]
+    }
+  }
+}
