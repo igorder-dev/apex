@@ -12,6 +12,7 @@ Scan the `docs/` directory and display a progress dashboard:
 ═══════════════════════════════════════════════
 
 Progress: [X/12] documents complete ([percentage]%)
+Context Batch: [1 (01-04) | 2 (05-08) | 3 (09-12)]
 
  # | Document                  | Status | Words | Last Modified
 ---|---------------------------|--------|-------|---------------
@@ -30,6 +31,11 @@ Progress: [X/12] documents complete ([percentage]%)
 
 ⬜ = Not started | 🔄 = In progress | ✅ = Complete
 
+📏 Quality Floor: [PASS/WARN for each completed doc]
+🔍 Domain Checklist: [Built / Not yet built]
+📄 Session Notes: [Exists / Not yet created]
+📑 llms.txt: [Generated / Pending]
+
 ❓ Open Questions: [count]
 📝 Pending Decisions: [count]
 👉 Suggested Next: [next document to work on]
@@ -39,3 +45,8 @@ Status determination:
 - ✅ Complete: File exists AND has been through CHECK phase (look for "APPROVED" marker)
 - 🔄 In Progress: File exists but incomplete or not yet approved
 - ⬜ Not Started: File does not exist
+
+Also check:
+- `docs/_session-notes.md` — report if exists and last modified time
+- `docs/llms.txt` — report if exists
+- Domain Validation Checklist — check if doc 01 contains it

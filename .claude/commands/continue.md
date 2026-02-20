@@ -7,7 +7,14 @@ allowed-tools: Read, Glob, Grep, Write, WebSearch, mcp__context7__resolve-librar
 
 ## Workflow
 
-### Step 1: Inventory
+### Step 1: Context Recovery
+Read these files in order to recover state:
+1. `docs/README.md` — pack index and navigation
+2. Most recently modified document in `docs/`
+3. `docs/_session-notes.md` — if it exists, contains key decisions and open questions
+4. Check the todo list for pending items
+
+### Step 2: Inventory
 Scan the `docs/` directory. List all existing documents and their completion status:
 
 ```
@@ -19,17 +26,20 @@ Scan the `docs/` directory. List all existing documents and their completion sta
 ├── ...
 ```
 
-### Step 2: Context Recovery
-Read the most recently modified document to understand current state. Check for any open questions or pending decisions.
+### Step 3: Orientation
+Announce your understanding of the current state:
+- What decisions have been made
+- What's the Domain Validation Checklist (from doc 01)
+- Any open questions from previous sessions
 
-### Step 3: Resume
+### Step 4: Resume
 Identify the next action and present it:
 
 ```
 ⏸️ CHECKPOINT: Ready to continue.
-📋 Current state: [what's done]
+📋 Current state: [what's done, key decisions recalled]
 👉 Next action: [specific next step in PVAC cycle]
 ❓ Open questions from last session: [if any]
 ```
 
-Wait for user direction before proceeding.
+**Wait for user direction before proceeding.**

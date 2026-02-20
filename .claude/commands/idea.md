@@ -38,15 +38,23 @@ Propose a specific research plan covering:
 - Technology options to compare
 - Competitor products to analyze
 
-### Step 5: PLAN Checkpoint
+### Step 5: Domain Validation Checklist (Draft)
+Based on the idea's domain, draft an initial Domain Validation Checklist:
+- What are the domain-specific safety concerns?
+- What operational concerns are unique to this domain?
+- What failure modes are domain-specific?
+Present this for user review — it will be applied to ALL subsequent documents.
+
+### Step 6: PLAN Checkpoint
 Present the full project plan and end with:
 
 ```
 ⏸️ CHECKPOINT: Project plan ready for review.
 📋 Summary: [brief]
 🔴 Devil's Advocate: [main concern about this idea]
+🔍 Domain Checklist: [key items from the domain validation checklist]
 👉 Next: Begin market research (01-product-research.md)
 ❓ Questions: [any blockers]
 ```
 
-Wait for user approval before proceeding.
+**WAIT for user approval before proceeding. Do NOT auto-approve your own plan.**
