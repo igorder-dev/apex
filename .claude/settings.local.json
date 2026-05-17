@@ -3,7 +3,20 @@
     "allow": [
       "Bash(dir:*)",
       "mcp__plugin_context7_context7__resolve-library-id",
-      "mcp__plugin_context7_context7__query-docs"
+      "mcp__plugin_context7_context7__query-docs",
+      "Bash(if not exist \"C:\\\\projects\\\\apex\\\\docs\" mkdir \"C:\\\\projects\\\\apex\\\\docs\")",
+      "Bash(where ebook-convert)",
+      "Bash(pip show ebooklib)",
+      "Bash(pip show pypdf)",
+      "Bash(pip show reportlab)",
+      "Bash(pip show weasyprint)",
+      "Bash(git checkout:*)",
+      "Bash(git add:*)",
+      "Bash(git -C \"C:\\\\projects\\\\DocForge\" add shared/lib/image_tools.py shared/tests/test_image_tools.py)",
+      "Bash(git -C:*)",
+      "Bash(measure-object -line)",
+      "Bash(select-object -expandproperty Lines)",
+      "Bash(gh repo:*)"
     ]
   }
 }
